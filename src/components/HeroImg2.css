@@ -1,0 +1,76 @@
+.hero-img{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    height: 60vh;
+    position: relative;
+}
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img::before{
+    content: "";
+    background: url("https://venturebeat.com/wp-content/uploads/2018/01/javascript-e1656424565930.jpg?fit=1786%2C895&strip=all");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero-img h1{
+    font-size: 2.4rem;
+}
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: transparent;
+}
+.about-text{
+    color: #fff;
+    width: 550px;
+}
+.about img{
+    height: 420px;
+    width: 400px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
+.about p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+@media screen and (max-width: 640px) {
+    .hero-img h1{
+        font-size: 2rem;
+    }
+}
